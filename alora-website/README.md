@@ -36,9 +36,9 @@ CSS
 JavaScript
 
 📁 Project Structure
-index.html
-style.css
-imagess/
+ -index.html
+ -style.css
+ -imagess/
 
 -Purpose
 
