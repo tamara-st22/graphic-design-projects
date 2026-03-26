@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Shop ALORA Essentials</title>
+</head>
+
+<body>
+<nav>
+    <img src="imagess/logo.jpg" class="logo">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="shop">
+
+    <h2>Shop</h2>
+    <p class="shop-subtitle">
+        Where nature meets beauty — explore formulas designed to care for your skin with purity and intention.
+    </p>
+
+    <!-- PRODUCTS GRID -->
+    <div class="product-grid" id="page1">
+
+        <div class="product-card">
+            <img src="imagess/face%20Mask%20product%20no-bg.png">
+            <h3>Soothing Sheet Mask</h3>
+            <p>$10</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="imagess/EYEPATCHES.png">
+            <h3>Hydrogel Eye Patches</h3>
+            <p>$15</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="imagess/Cleanser%20%20Product%20no-bg.png">
+            <h3>Botanical Cleanser</h3>
+            <p>$23</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="imagess/eye-cream-day.png">
+            <h3>Brightening Eye Treatment</h3>
+            <p>$18</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="imagess/eye-cream-night.png">
+            <h3>Night Eye Treatment</h3>
+            <p>$18</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="imagess/serum%20product%20no-bg.png">
+            <h3>Vitamin C Serum</h3>
+            <p>$27</p>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+
+    <!-- PAGE 2 -->
+    <div class="product-grid hidden" id="page2">
+
+        <div class="product-card">
+            <img src="imagess/Face%20Cream%20product%20no-bg.png">
+            <h3>Hydrating Face Cream</h3>
+            <p>$30</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="imagess/Toner%20Product%20no-bg.png">
+            <h3>Balancing Toner</h3>
+            <p>$25</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="imagess/acne-stick.png">
+            <h3>Clear Spot Stick</h3>
+            <p>$18</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="imagess/trio-set.png" class="trio-img">
+            <h3>Glow Ritual Set</h3>
+            <p>$40</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="imagess/calm-capsules.png">
+            <h3>Calm Restore Capsules</h3>
+            <p>$32</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="imagess/matcha.png">
+            <h3>Matcha Reset Powder</h3>
+            <p>$60</p>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+
+    <!-- PAGINATION -->
+    <div class="pagination">
+        <button onclick="showPage(1)" id="btn1" class="active">1</button>
+        <button onclick="showPage(2)" id="btn2">2</button>
+    </div>
+
+</section>
+<script>
+    function showPage(page) {
+        document.getElementById("page1").classList.add("hidden");
+        document.getElementById("page2").classList.add("hidden");
+
+        document.getElementById("btn1").classList.remove("active");
+        document.getElementById("btn2").classList.remove("active");
+
+        if (page === 1) {
+            document.getElementById("page1").classList.remove("hidden");
+            document.getElementById("btn1").classList.add("active");
+        } else {
+            document.getElementById("page2").classList.remove("hidden");
+            document.getElementById("btn2").classList.add("active");
+        }
+    }
+</script>
+</body>
+</html>
