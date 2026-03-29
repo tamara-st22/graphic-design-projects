@@ -7,15 +7,13 @@ A modern, minimal, and aesthetic skincare brand website designed to present prod
 ALORA is a conceptual skincare brand website focused on elegance, simplicity, and a luxury feel.
 The design emphasizes soft tones, clean layouts, and smooth user experience, inspired by modern beauty and skincare brands.
 
--The website includes:
+## Features
+- Product showcase section  
+- Visual slider for featured products  
+- Instagram-inspired content section  
+- Clean and minimal UI/UX design  
+- Contact page with form layout  
 
-  *A product showcase section
-
-  *A visual slider for featured products
-
-  *Instagram-inspired content section
-
-  *Clean and minimal UI/UX design
 
 -Design & Creativity
 
